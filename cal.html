@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript" src="index1.js"></script>
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        font-size: 35px;
+      }
+
+      input[type=button] {
+        width: 80px;
+        height: 80px;
+        margin: 3px;
+        color: #fff;
+        border-radius: 8px;
+        background-color: #000000
+      }
+
+      .calculator{
+        width: 344px;
+        margin: auto;
+        background-color: blue;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 40px;
+      }
+      .inputdisplay {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+    </style>
+    
+</head>
+<body>
+    <div class="calculator">
+        <input class="inputdisplay">
+        <table>
+            <tr>
+                <td> 
+                    <input type="button" onclick="clearall()" value="C">
+                </td>
+                <td> 
+                    <input type="button"onclick="deleteChar()" value="B">
+                </td>
+                <td> 
+                    <input type="button" onclick="insertChar('/')"value="/">
+                </td>
+                <td> 
+                    <input type="button" onclick="insertChar('*')"value="*">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="insertChar(7)"value="7">
+                </td>
+                <td>
+                    <input type="button" onclick="insertChar(8)"value="8">
+                </td>
+                <td>
+                    <input type="button"onclick="insertChar(9)" value="9">
+                </td>
+                <td>
+                    <input type="button"onclick="insertChar('-')" value="-">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button"onclick="insertChar(4)" value="4">
+                </td>
+                <td>
+                    <input type="button" onclick="insertChar(5)"value="5">
+                </td>
+                <td>
+                    <input type="button" onclick="insertChar(6)"value="6">
+                </td>
+                <td>
+                    <input type="button" onclick="insertChar('+')"value="+">
+                </td>
+                </tr>
+                <td> 
+                    <input type="button" onclick="insertChar(1)"value="1">
+                </td>
+                <td> 
+                    <input type="button" onclick="insertChar(2)"value="2">
+                </td>
+                <td> 
+                    <input type="button" onclick="insertChar(3)"value="3">
+                </td>
+                <td rowspan="2"> 
+                    <input type="button" onclick="result()"value="=" onclick="result()"style="height: 158px;">
+                </td>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" onclick="insertChar(0)"value="0" style="width: 158px;">
+                    </td>
+                    <td>
+                        <input type="button" onclick="insertChar('.')"value=".">
+                    </td>
+                </tr>
+        </table>
+
+    </div>
+</body>
+</html>
